@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OHM Management Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!-- Section Header -->
+    <section class="top-header">
+        <div class="row top">
+            <div class="logo">
+                <a href=""><img src="images/ohm.png" alt="" ></a>
+            </div>
+			<!-- Navigation -->
+            <ul class="nav">
+                <li class="nav-item" onclick="scrollto('home');"><a>Home</a></li>
+                <li class="nav-item" onclick="scrollto('about');"><a>About Us</a></li>
+                <li class="nav-item" onclick="scrollto('services');"><a>Services</a></li>
+                <li class="nav-item" onclick="scrollto('contact');"><a>Contact Us</a></li>
+            </ul>
+            <div class="social-links">
+                <a href=""><i class="fa  fa-facebook-square"></i></a>
+                <a href=""><i class="fa  fa-linkedin-square"></i></a>
+                <a href=""><i class="fa  fa-youtube-square"></i></a>
+            </div>
+            <!-- Toggle nav -->
+            <div id="mySidebar" class="sidebar">      
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <div class="socialToggle">
+                    <a href=""><i class="fa  fa-facebook-square"></i></a>
+                    <a href=""><i class="fa  fa-linkedin-square"></i></a>
+                    <a href=""><i class="fa  fa-youtube-square"></i></a>
+                </div>
+            </div>
+            <div id="main">
+                <button class="closebtn" id="close" onclick="closeNav()" style="display: none;"><i class="fa fa-times"></i></button>
+                <button class="openbtn" id="open" onclick="openNav()"><i class="fa fa-bars"></i></button>
+            </div>
+        </div>
+    </section>
+	<!-- Section Slider -->
+    <section class="bottom-header" id="home">
+        <div class="slideshow">
+            <div class="sliders">
+                <img src="images/slider1.jpg">
+                <div class="card-box">
+                    <h1>ISO Consulting</h1>
+                    <p>Whether you're looking for side-by-side comparisons,<br>info around rewards versus points or
+                        you're ready.</p>
+                    <div class="slider-btn"><a><span></span>learn more</a></div>
+                </div>
+            </div>
+            <div class="sliders">
+                <img src="images/slider2.jpg">
+                <div class="card-box">
+                    <h1>Auditing</h1>
+                    <p>Whether you're looking for side-by-side comparisons,<br>info around rewards versus points or
+                        you're ready.</p>
+                    <div class="slider-btn"><a><span></span>learn more</a></div>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 1)"><span>&#10094;</span></a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+    </section>
+	<!-- Section aboutus -->
+    <section class="aboutus row" id="about">
+        <div class="left">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <div class="right">
+            <img src="images/about.jpg" alt="About Us">
+        </div>
+    </section>
+	<!-- Section Services -->
+    <section class="services row" id="services">
+        <h2>Our Services</h2>
+        <div class="servicebox">
+            <div class="cards">
+                <img src="images/service1.jpg" alt="">
+                <h3>ISO Consulting</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div class="cards">
+                <img src="images/service2.jpg" alt="">
+                <h3>Auditing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div class="cards">
+                <img src="images/service3.jpg" alt="">
+                <h3>Quality Training</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+	<!-- Section Team -->
+    <section class="team row">
+        <h2>Our Team</h2>
+        <div class="team-list">
+            <div class="team-wrapper">
+                <div class="team-img">
+                    <img src="images/team1.jpg" alt="">
+                    <div class="social">
+                        <a href=""><i class="fa  fa-facebook-square"></i></a>
+                        <a href=""><i class="fa  fa-linkedin-square"></i></a>
+                        <a href=""><i class="fa  fa-youtube-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="team-box">
+                    <h3>Ravi Patel</h3>
+                    <h4>CEO</h4>
+                </div>
+            </div>
+            <div class="team-wrapper">
+                <div class="team-img">
+                    <img src="images/team1.jpg" alt="">
+                    <div class="social">
+                        <a href=""><i class="fa  fa-facebook-square"></i></a>
+                        <a href=""><i class="fa  fa-linkedin-square"></i></a>
+                        <a href=""><i class="fa  fa-youtube-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-box">
+                    <h3>Ravi Patel</h3>
+                    <h4>Quality Engineer</h4>
+                </div>
+            </div>
+            <div class="team-wrapper">
+                <div class="team-img">
+                    <img src="images/team1.jpg" alt="">
+                    <div class="social">
+                        <a href=""><i class="fa  fa-facebook-square"></i></a>
+                        <a href=""><i class="fa  fa-linkedin-square"></i></a>
+                        <a href=""><i class="fa  fa-youtube-square"></i></a>
+                    </div>
+                </div>
+                <div class="team-box">
+                    <h3>ravi patel</h3>
+                    <h4>consultant</h4>
+                </div>
+            </div>           
+        </div>
+    </section>
+	<!-- Section Subscribe -->
+    <section class="subscribe row">
+        <h2>subcribe us</h2>
+        <form action="" class="subscribe-form">
+            <input type="text" placeholder="Email Address">
+            <button class="slider-btn"><span>subcribe</span></button>
+        </form>
+    </section>
+	<!-- Section Contactus -->
+    <section class="contactus row" id="contact">
+        <div class="left-contact">
+			<!-- Address Details -->
+            <h2>contact us</h2>
+            <div class="address">
+                <a  href=""><i class="fa fa-map-marker"></i></a>
+                <p>
+                    <strong>address:</strong><br>
+                    <span>Street, Ontario, CA, 121212</span> 
+                </p>
+            </div>
+            <div class="address">
+                <a href=""><i class="fa fa-phone"></i></a>
+                <p>
+                    <strong>phone:</strong><br>
+                    <span>000-000-0000</span> 
+                </p>
+            </div>
+            <div class="address">         
+                <a href=""><i class="fa fa-envelope"></i></a>
+                <p>
+                    <strong>email:</strong><br>
+                    <span>demomail@test.org</span> 
+                </p>              
+            </div>
+            <div class="social">
+                <a href=""><i class="fa  fa-facebook-f"></i></a>
+                <a href=""><i class="fa  fa-linkedin"></i></a>
+                <a href=""><i class="fa  fa-youtube"></i></a>
+            </div>
+        </div>
+		<!-- Contact Form -->
+        <div class="right-contact">
+            <form action="">
+                <div class="from-input">
+                    <input type="text" placeholder="First Name" />
+                    <input type="text" placeholder="Last Name" />
+                </div>
+                <div class="from-input">
+                    <input type="text" placeholder="E-mail Address" />
+                    <input type="text" placeholder="Your Phone" />
+                </div>
+                <div class="from-input">
+                    <input type="text" placeholder="Your Company" />
+                    <input type="text" placeholder="Your City" />
+                </div>
+                <div class="from-input">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <button class="slider-btn">send</button>
+            </form>
+        </div>
+    </section>
+	<!-- Section Footer -->
+    <section class="footer">
+        <div class="footer-panel">
+            © copyright 2021 <a href="">OHM Management Solutions</a> - All Right Reserved
+        </div>    
+    </section>
+	<script src="js/jquery.js"></script>
+    <script src="js/slide.js"></script>
+</body>
+</html>
